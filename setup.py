@@ -1,3 +1,4 @@
+
 from setuptools import setup, find_packages
 
 with open('requirements.txt') as requirements_file:
@@ -12,5 +13,5 @@ setup(
     install_requires=install_requirements,
     url='https://github.com/ottomossei/checkpy/',
     license=license,
-    # packages=find_packages(exclude=['examples'])
+    packages=find_packages()
 )
