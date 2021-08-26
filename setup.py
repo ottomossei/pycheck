@@ -6,12 +6,12 @@ with open('requirements.txt') as requirements_file:
 
 setup(
     name="pycheck",
-    version="1.0.4",
+    version="1.0.5",
     description="A Python tool that mainly supports unit testing.",
     author="ottomossei",
     author_email="seki.jobhunting@gmail.com",
     install_requires=install_requirements,
     url='https://github.com/ottomossei/pycheck/',
     license=license,
-    packages=find_packages('pycheck')
+    packages=find_packages()
 )
