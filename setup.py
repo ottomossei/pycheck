@@ -5,7 +5,7 @@ with open('requirements.txt') as requirements_file:
     install_requirements = requirements_file.read().splitlines()
 
 setup(
-    name="checkpy",
+    name="pycheck",
     version="1.0.2",
     description="A Python tool that mainly supports unit testing.",
     author="ottomossei",
@@ -13,5 +13,5 @@ setup(
     install_requires=install_requirements,
     url='https://github.com/ottomossei/checkpy/',
     license=license,
-    packages=find_packages("checkpy")
+    packages=find_packages("pycheck")
 )
