@@ -13,5 +13,5 @@ setup(
     install_requires=install_requirements,
     url='https://github.com/ottomossei/pycheck/',
     license=license,
-    packages=find_packages(["pycheck"])
+    packages=find_packages(['pycheck'])
 )
