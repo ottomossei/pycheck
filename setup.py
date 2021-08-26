@@ -11,7 +11,7 @@ setup(
     author="ottomossei",
     author_email="seki.jobhunting@gmail.com",
     install_requires=install_requirements,
-    url='https://github.com/ottomossei/checkpy/',
+    url='https://github.com/ottomossei/pycheck/',
     license=license,
     packages=find_packages("pycheck")
 )
