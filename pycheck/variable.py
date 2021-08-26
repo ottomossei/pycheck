@@ -70,40 +70,43 @@ def info(v):
 
     print(color.YELLOW + '----------------------------------------' + color.END)
 
-if __name__ == '__main__':
-    v = 'asdfg'
-    info(v)
-    v = 24
-    info(v)
-    v = ['aa','b']
-    info(v)
-    v = {'a':233,'b':'adfa','c':'124'}
-    info(v)
-    v =  np.array([1, 2,1])
-    info(v)
-    '''
-    class
-    '''
-    class Dog(object):
-        def __init__(self, name):
-            self.name = name
+# if __name__ == '__main__':
+#     from pycheck import variable
+#     v = 'asdfg'
+#     info(v)
+#     variable.info(v)
 
-    class SuperDog(Dog):
-        def __init__(self, name, function):
-            super(SuperDog, self).__init__(name)
-            self.function = function
+#     v = 24
+#     info(v)
+#     v = ['aa','b']
+#     info(v)
+#     v = {'a':233,'b':'adfa','c':'124'}
+#     info(v)
+#     v =  np.array([1, 2,1])
+#     info(v)
+#     '''
+#     class
+#     '''
+#     class Dog(object):
+#         def __init__(self, name):
+#             self.name = name
 
-    p = Dog('Poodle')
-    info(p)
-    pp = SuperDog('Robin', 'sit down')
-    info(pp)
-    v = pd.Series([1,3,5,np.nan,6,8])
-    info(v)
+#     class SuperDog(Dog):
+#         def __init__(self, name, function):
+#             super(SuperDog, self).__init__(name)
+#             self.function = function
 
-    v = pd.DataFrame({ 'A' : 1.,
-                        'B' : pd.Timestamp('20130102'),
-                        'C' : pd.Series(1,index=list(range(4)),dtype='float32'),
-                        'D' : np.array([3] * 4,dtype='int32'),
-                        'E' : pd.Categorical(["test","train","test","train"]),
-                        'F' : 'foo' })
-    info(v)
+#     p = Dog('Poodle')
+#     info(p)
+#     pp = SuperDog('Robin', 'sit down')
+#     info(pp)
+#     v = pd.Series([1,3,5,np.nan,6,8])
+#     info(v)
+
+#     v = pd.DataFrame({ 'A' : 1.,
+#                         'B' : pd.Timestamp('20130102'),
+#                         'C' : pd.Series(1,index=list(range(4)),dtype='float32'),
+#                         'D' : np.array([3] * 4,dtype='int32'),
+#                         'E' : pd.Categorical(["test","train","test","train"]),
+#                         'F' : 'foo' })
+#     info(v)
